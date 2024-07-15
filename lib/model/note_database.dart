@@ -1,1 +1,5 @@
-class NoteDatabase {}
+class NoteDatabase {
+  //initialize db
+
+  //create
+}
