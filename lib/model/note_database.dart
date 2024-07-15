@@ -12,6 +12,8 @@ class NoteDatabase {
       directory: dir.path,
     );
   }
+  //list of notes
+  final List<Note> currentNotes = [];
 
   //create
 
