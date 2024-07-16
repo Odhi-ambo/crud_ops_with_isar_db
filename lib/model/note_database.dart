@@ -16,6 +16,9 @@ class NoteDatabase {
   final List<Note> currentNotes = [];
 
   //create
+  Future<void> addNote(String textFromUser) async{
+    
+  }
 
   //read
 
