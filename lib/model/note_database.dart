@@ -23,9 +23,13 @@ class NoteDatabase {
 
     //save a note to db
     await isar.writeTxn(() => isar.notes.put(newNote));
+
+    //re-read from db
+    fetchNotes();
   }
 
-  //read
+  //read - notes from db
+  Future<void> fetchNotes() async {}
 
   //update
 
