@@ -20,6 +20,9 @@ class NoteDatabase {
   Future<void> addNote(String textFromUser) async {
     //create a new note object
     final newNote = Note()..text = textFromUser;
+
+    //save a note to db
+    await isar.writeTxn(() => isar.notes.put(newNote));
   }
 
   //read
