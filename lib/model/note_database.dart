@@ -12,13 +12,12 @@ class NoteDatabase {
       directory: dir.path,
     );
   }
+
   //list of notes
   final List<Note> currentNotes = [];
 
   //create
-  Future<void> addNote(String textFromUser) async{
-    
-  }
+  Future<void> addNote(String textFromUser) async {}
 
   //read
 
