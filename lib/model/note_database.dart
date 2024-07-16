@@ -30,8 +30,9 @@ class NoteDatabase {
 
   //read - notes from db
   Future<void> fetchNotes() async {
-    List<Note> fetchNotes = await isar.notes.where().findAll();
+    List<Note> fetchedNotes = await isar.notes.where().findAll();
     currentNotes.clear();
+    currentNotes.addAll(fetchedNotes);
   }
 
   //update
