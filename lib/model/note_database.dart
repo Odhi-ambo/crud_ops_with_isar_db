@@ -1,8 +1,9 @@
 import 'package:crud_isar_db/model/note.dart';
+import 'package:flutter/foundation.dart';
 import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
 
-class NoteDatabase {
+class NoteDatabase extends ChangeNotifier {
   static late Isar isar;
   //initialize db
   static Future<void> initialize() async {
