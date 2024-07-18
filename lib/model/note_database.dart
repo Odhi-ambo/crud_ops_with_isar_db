@@ -34,6 +34,7 @@ class NoteDatabase extends ChangeNotifier {
     List<Note> fetchedNotes = await isar.notes.where().findAll();
     currentNotes.clear();
     currentNotes.addAll(fetchedNotes);
+    notifyListeners();
   }
 
   //update
