@@ -1,9 +1,11 @@
+import 'package:crud_isar_db/model/note_database.dart';
 import 'package:crud_isar_db/pages/note_page.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
   //initialize note isar db
   WidgetsFlutterBinding.ensureInitialized();
+  await NoteDatabase.initialize();
   runApp(const MyApp());
 }
 
@@ -12,12 +14,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const NotePage(),
+    return const MaterialApp(
+      home: NotePage(),
     );
   }
 }
