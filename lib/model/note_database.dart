@@ -5,7 +5,7 @@ import 'package:path_provider/path_provider.dart';
 class NoteDatabase {
   static late Isar isar;
   //initialize db
-  static Future<void> init() async {
+  static Future<void> initialize() async {
     final dir = await getApplicationDocumentsDirectory();
     isar = await Isar.open(
       [NoteSchema],
