@@ -36,6 +36,7 @@ class NoteDatabase {
   }
 
   //update
+  Future<void> updateNotes(int id, String newText) async {}
 
   //delete
 }
