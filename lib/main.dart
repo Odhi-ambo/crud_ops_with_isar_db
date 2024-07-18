@@ -2,6 +2,7 @@ import 'package:crud_isar_db/pages/note_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  //initialize note isar db
   runApp(const MyApp());
 }
 
