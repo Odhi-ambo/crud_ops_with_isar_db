@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   //initialize note isar db
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
