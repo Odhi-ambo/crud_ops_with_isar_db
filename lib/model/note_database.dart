@@ -38,7 +38,10 @@ class NoteDatabase {
   //update
   Future<void> updateNotes(int id, String newText) async {
     final existingNote = await isar.notes.get(id);
-    if (existingNote != Null) {}
+    if (existingNote != Null) {
+      existingNote?.text = newText;
+      await isar.writeTxn(() => isar.notes.put(existingNote!));
+    }
   }
 
   //delete
