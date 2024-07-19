@@ -1,9 +1,26 @@
+import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class NotePage extends StatelessWidget {
-  const NotePage({super.key});
+  final textController = TextEditingController();
+
+  NotePage({super.key});
   //create a note
-  void createNote() {}
+  void createNote() {
+    showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+              content: TextField(
+                controller: textController,
+              ),
+              actions: [
+                MaterialButton(onPressed: () {
+                  context.read<NoteDatabase>().addNote(textController.text);
+                })
+              ],
+            ));
+  }
 
   //read a note
 
@@ -19,7 +36,7 @@ class NotePage extends StatelessWidget {
         title: const Center(child: Text('Notes')),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: createNote,
         child: const Icon(Icons.add),
       ),
     );
