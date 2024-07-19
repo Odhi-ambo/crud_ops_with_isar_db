@@ -10,7 +10,10 @@ class NotePage extends StatelessWidget {
         backgroundColor: Colors.cyan,
         title: const Center(child: Text('Notes')),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
