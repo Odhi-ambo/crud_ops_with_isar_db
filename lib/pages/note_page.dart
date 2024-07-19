@@ -38,7 +38,9 @@ class _NotePageState extends State<NotePage> {
   }
 
   //read a note
-  void readNotes() {}
+  void readNotes() {
+    context.watch<NoteDatabase>().fetchNotes();
+  }
 
   @override
   Widget build(BuildContext context) {
