@@ -22,8 +22,12 @@ class _NotePageState extends State<NotePage> {
         ),
         actions: [
           MaterialButton(
+            //create button
             onPressed: () {
+              //add to db
               context.read<NoteDatabase>().addNote(textController.text);
+
+              //pop the dialog box
               Navigator.pop(context);
             },
             child: const Text('Create'),
