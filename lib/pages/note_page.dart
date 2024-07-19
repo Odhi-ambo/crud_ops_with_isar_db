@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class NotePage extends StatelessWidget {
   const NotePage({super.key});
   //create a note
+  void createNote() {}
 
   //read a note
 
