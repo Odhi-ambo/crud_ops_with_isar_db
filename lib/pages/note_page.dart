@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 
 class NotePage extends StatelessWidget {
   const NotePage({super.key});
+  //create a note
+
+  //read a note
+
+  //update a note
+
+  //delete a note
 
   @override
   Widget build(BuildContext context) {
