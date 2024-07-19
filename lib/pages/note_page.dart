@@ -38,6 +38,8 @@ class _NotePageState extends State<NotePage> {
   }
 
   //read a note
+  void readNotes() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
