@@ -20,7 +20,7 @@ class NotePage extends StatelessWidget {
                     context.read<NoteDatabase>().addNote(textController.text);
                     Navigator.pop(context);
                   },
-                  child: Text('Create'),
+                  child: const Text('Create'),
                 )
               ],
             ));
