@@ -2,36 +2,38 @@ import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class NotePage extends StatelessWidget {
+class NotePage extends StatefulWidget {
+  const NotePage({super.key});
+
+  @override
+  State<NotePage> createState() => _NotePageState();
+}
+
+class _NotePageState extends State<NotePage> {
   final textController = TextEditingController();
 
-  NotePage({super.key});
   //create a note
   void createNote() {
     showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-              content: TextField(
-                controller: textController,
-              ),
-              actions: [
-                MaterialButton(
-                  onPressed: () {
-                    context.read<NoteDatabase>().addNote(textController.text);
-                    Navigator.pop(context);
-                  },
-                  child: const Text('Create'),
-                )
-              ],
-            ));
+      context: context,
+      builder: (context) => AlertDialog(
+        content: TextField(
+          controller: textController,
+        ),
+        actions: [
+          MaterialButton(
+            onPressed: () {
+              context.read<NoteDatabase>().addNote(textController.text);
+              Navigator.pop(context);
+            },
+            child: const Text('Create'),
+          )
+        ],
+      ),
+    );
   }
 
   //read a note
-
-  //update a note
-
-  //delete a note
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
