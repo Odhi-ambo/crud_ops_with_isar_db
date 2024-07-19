@@ -7,7 +7,7 @@ class NotePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notes'),
+        title: Center(child: const Text('Notes')),
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {}),
     );
