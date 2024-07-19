@@ -15,9 +15,13 @@ class NotePage extends StatelessWidget {
                 controller: textController,
               ),
               actions: [
-                MaterialButton(onPressed: () {
-                  context.read<NoteDatabase>().addNote(textController.text);
-                })
+                MaterialButton(
+                  onPressed: () {
+                    context.read<NoteDatabase>().addNote(textController.text);
+                    Navigator.pop(context);
+                  },
+                  child: Text('Create'),
+                )
               ],
             ));
   }
