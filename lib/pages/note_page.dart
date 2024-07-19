@@ -9,6 +9,7 @@ class NotePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Notes'),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () {}),
     );
   }
 }
