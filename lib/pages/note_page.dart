@@ -71,6 +71,8 @@ class _NotePageState extends State<NotePage> {
                 .updateNotes(note.id, textController.text);
             //clear controller
             textController.clear();
+            //pop dialog box
+            Navigator.pop(context);
           })
 
           //
