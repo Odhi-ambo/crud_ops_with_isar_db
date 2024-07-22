@@ -75,7 +75,7 @@ class _NotePageState extends State<NotePage> {
               //pop dialog box
               Navigator.pop(context);
             },
-            child: Text('Update'),
+            child: const Text('Update'),
           )
 
           //
