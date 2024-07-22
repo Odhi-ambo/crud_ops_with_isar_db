@@ -62,6 +62,12 @@ class _NotePageState extends State<NotePage> {
       context: context,
       builder: (context) => AlertDialog(
         content: TextField(controller: textController),
+        actions: [
+          //update button
+          MaterialButton(onPressed: () {})
+
+          //
+        ],
       ),
     );
   }
