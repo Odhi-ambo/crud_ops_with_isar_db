@@ -58,6 +58,12 @@ class _NotePageState extends State<NotePage> {
   void updateNote(Note note) {
     //pre=fill the current note text
     textController.text = note.text;
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        content: TextField(controller: textController),
+      ),
+    );
   }
 
   //delete a note
