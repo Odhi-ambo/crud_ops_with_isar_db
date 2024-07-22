@@ -53,7 +53,9 @@ class _NotePageState extends State<NotePage> {
   void readNotes() {
     context.read<NoteDatabase>().fetchNotes();
   }
+
   //update a note
+  void updateNote(Note note) {}
 
   //delete a note
 
