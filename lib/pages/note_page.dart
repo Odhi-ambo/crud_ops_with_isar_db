@@ -1,3 +1,4 @@
+import 'package:crud_isar_db/model/note.dart';
 import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -49,6 +50,9 @@ class _NotePageState extends State<NotePage> {
   Widget build(BuildContext context) {
     //note database
     final notedatabase = context.watch<NoteDatabase>();
+
+    //current notes
+    List<Note> currentNotes = notedatabase.currentNotes;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan,
