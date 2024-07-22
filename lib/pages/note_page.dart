@@ -21,7 +21,7 @@ class _NotePageState extends State<NotePage> {
     readNotes();
   }
 
-  //create a note
+  //CREATE A NOTE
   void createNote() {
     showDialog(
       context: context,
@@ -49,12 +49,12 @@ class _NotePageState extends State<NotePage> {
     );
   }
 
-  //read a note
+  //READ A NOTE
   void readNotes() {
     context.read<NoteDatabase>().fetchNotes();
   }
 
-  //update a note
+  //UPDATE A NOTE
   void updateNote(Note note) {
     //pre=fill the current note text
     textController.text = note.text;
@@ -84,7 +84,7 @@ class _NotePageState extends State<NotePage> {
     );
   }
 
-  //delete a note
+  //DELETE A NOTE
 
   @override
   Widget build(BuildContext context) {
