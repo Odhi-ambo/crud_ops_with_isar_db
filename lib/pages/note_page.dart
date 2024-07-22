@@ -116,7 +116,10 @@ class _NotePageState extends State<NotePage> {
               title: Text(note.text),
               trailing: Row(
                 children: [
-                  //update button
+                  //edit button
+                  IconButton(
+                      onPressed: () => updateNote(note),
+                      icon: const Icon(Icons.edit))
 
                   //delete button
                 ],
