@@ -118,10 +118,14 @@ class _NotePageState extends State<NotePage> {
                 children: [
                   //edit button
                   IconButton(
-                      onPressed: () => updateNote(note),
-                      icon: const Icon(Icons.edit))
+                    onPressed: () => updateNote(note),
+                    icon: const Icon(Icons.edit),
+                  ),
 
                   //delete button
+                  IconButton(
+                      onPressed: () => deleteNote(note.id),
+                      icon: const Icon(Icons.delete))
                 ],
               ),
             );
