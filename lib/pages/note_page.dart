@@ -13,7 +13,9 @@ class NotePage extends StatefulWidget {
 class _NotePageState extends State<NotePage> {
   final textController = TextEditingController();
 
-  void initState() {}
+  void initState() {
+    super.initState();
+  }
 
   //create a note
   void createNote() {
