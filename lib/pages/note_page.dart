@@ -115,6 +115,7 @@ class _NotePageState extends State<NotePage> {
             return ListTile(
               title: Text(note.text),
               trailing: Row(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   //edit button
                   IconButton(
