@@ -64,16 +64,19 @@ class _NotePageState extends State<NotePage> {
         content: TextField(controller: textController),
         actions: [
           //update button
-          MaterialButton(onPressed: () {
-            //update note in db
-            context
-                .read<NoteDatabase>()
-                .updateNotes(note.id, textController.text);
-            //clear controller
-            textController.clear();
-            //pop dialog box
-            Navigator.pop(context);
-          })
+          MaterialButton(
+            onPressed: () {
+              //update note in db
+              context
+                  .read<NoteDatabase>()
+                  .updateNotes(note.id, textController.text);
+              //clear controller
+              textController.clear();
+              //pop dialog box
+              Navigator.pop(context);
+            },
+            child: Text('Update'),
+          )
 
           //
         ],
