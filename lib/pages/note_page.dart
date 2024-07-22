@@ -47,6 +47,8 @@ class _NotePageState extends State<NotePage> {
 
   @override
   Widget build(BuildContext context) {
+    //note database
+    final notedatabase = context.watch<NoteDatabase>();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan,
