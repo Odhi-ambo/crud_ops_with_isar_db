@@ -15,6 +15,7 @@ class _NotePageState extends State<NotePage> {
 
   void initState() {
     super.initState();
+    readNotes();
   }
 
   //create a note
