@@ -65,6 +65,9 @@ class _NotePageState extends State<NotePage> {
       body: ListView.builder(itemBuilder: (context, index) {
         //get individual note
         final note = currentNotes[index];
+
+        //return listTile UI
+        return ListTile();
       }),
     );
   }
