@@ -114,6 +114,13 @@ class _NotePageState extends State<NotePage> {
             //return listTile UI
             return ListTile(
               title: Text(note.text),
+              trailing: Row(
+                children: [
+                  //update button
+
+                  //delete button
+                ],
+              ),
             );
           }),
     );
