@@ -15,6 +15,8 @@ class _NotePageState extends State<NotePage> {
 
   void initState() {
     super.initState();
+
+    //on app startup, fetch existing notes
     readNotes();
   }
 
@@ -45,7 +47,7 @@ class _NotePageState extends State<NotePage> {
 
   //read a note
   void readNotes() {
-    context.watch<NoteDatabase>().fetchNotes();
+    context.read<NoteDatabase>().fetchNotes();
   }
   //update a note
 
