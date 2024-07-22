@@ -55,7 +55,10 @@ class _NotePageState extends State<NotePage> {
   }
 
   //update a note
-  void updateNote(Note note) {}
+  void updateNote(Note note) {
+    //pre=fill the current note text
+    textController.text = note.text;
+  }
 
   //delete a note
 
