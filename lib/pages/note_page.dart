@@ -37,6 +37,9 @@ class _NotePageState extends State<NotePage> {
 
               //pop the dialog box
               Navigator.pop(context);
+
+              //clear textcontroller
+              textController.clear();
             },
             child: const Text('Create'),
           )
