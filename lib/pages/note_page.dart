@@ -64,7 +64,12 @@ class _NotePageState extends State<NotePage> {
         content: TextField(controller: textController),
         actions: [
           //update button
-          MaterialButton(onPressed: () {})
+          MaterialButton(onPressed: () {
+            //update note in db
+            context
+                .read<NoteDatabase>()
+                .updateNotes(note.id, textController.text);
+          })
 
           //
         ],
