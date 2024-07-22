@@ -13,6 +13,7 @@ class NotePage extends StatefulWidget {
 class _NotePageState extends State<NotePage> {
   final textController = TextEditingController();
 
+  @override
   void initState() {
     super.initState();
 
