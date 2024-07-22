@@ -13,6 +13,8 @@ class NotePage extends StatefulWidget {
 class _NotePageState extends State<NotePage> {
   final textController = TextEditingController();
 
+  void initState() {}
+
   //create a note
   void createNote() {
     showDialog(
@@ -69,7 +71,9 @@ class _NotePageState extends State<NotePage> {
             final note = currentNotes[index];
 
             //return listTile UI
-            return ListTile();
+            return ListTile(
+              title: Text(note.text),
+            );
           }),
     );
   }
