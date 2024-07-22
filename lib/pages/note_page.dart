@@ -69,6 +69,8 @@ class _NotePageState extends State<NotePage> {
             context
                 .read<NoteDatabase>()
                 .updateNotes(note.id, textController.text);
+            //clear controller
+            textController.clear();
           })
 
           //
