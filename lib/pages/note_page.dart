@@ -62,7 +62,10 @@ class _NotePageState extends State<NotePage> {
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
-      body: ListView.builder(itemBuilder: (context, index) {}),
+      body: ListView.builder(itemBuilder: (context, index) {
+        //get individual note
+        final note = currentNotes[index];
+      }),
     );
   }
 }
