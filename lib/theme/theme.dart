@@ -11,3 +11,4 @@ ThemeData lightMode = ThemeData(
         inversePrimary: Colors.grey.shade800));
 
 //dark mode
+ThemeData darkMode = ThemeData();
