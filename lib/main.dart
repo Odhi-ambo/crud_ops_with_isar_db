@@ -13,7 +13,7 @@ void main() async {
       ChangeNotifierProvider(create: (context) => NoteDatabase()),
       ChangeNotifierProvider(create: (context) => ThemeProvider()),
     ],
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }
 
