@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NotePage(),
+      home: const NotePage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
