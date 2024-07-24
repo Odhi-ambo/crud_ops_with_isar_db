@@ -107,6 +107,7 @@ class _NotePageState extends State<NotePage> {
         child: const Icon(Icons.add),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text('Notes'),
           Expanded(
