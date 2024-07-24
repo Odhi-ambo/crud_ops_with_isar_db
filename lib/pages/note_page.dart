@@ -109,7 +109,10 @@ class _NotePageState extends State<NotePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Notes'),
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: const Text('Notes'),
+          ),
           Expanded(
             child: ListView.builder(
                 itemCount: currentNotes.length,
