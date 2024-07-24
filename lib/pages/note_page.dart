@@ -106,32 +106,37 @@ class _NotePageState extends State<NotePage> {
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
-      body: ListView.builder(
-          itemCount: currentNotes.length,
-          itemBuilder: (context, index) {
-            //get individual note
-            final note = currentNotes[index];
+      body: Column(
+        children: [
+          Text('Notes'),
+          ListView.builder(
+              itemCount: currentNotes.length,
+              itemBuilder: (context, index) {
+                //get individual note
+                final note = currentNotes[index];
 
-            //return listTile UI
-            return ListTile(
-              title: Text(note.text),
-              trailing: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  //edit button
-                  IconButton(
-                    onPressed: () => updateNote(note),
-                    icon: const Icon(Icons.edit),
+                //return listTile UI
+                return ListTile(
+                  title: Text(note.text),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      //edit button
+                      IconButton(
+                        onPressed: () => updateNote(note),
+                        icon: const Icon(Icons.edit),
+                      ),
+
+                      //delete button
+                      IconButton(
+                          onPressed: () => deleteNote(note.id),
+                          icon: const Icon(Icons.delete))
+                    ],
                   ),
-
-                  //delete button
-                  IconButton(
-                      onPressed: () => deleteNote(note.id),
-                      icon: const Icon(Icons.delete))
-                ],
-              ),
-            );
-          }),
+                );
+              }),
+        ],
+      ),
     );
   }
 }
