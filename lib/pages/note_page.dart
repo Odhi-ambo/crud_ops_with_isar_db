@@ -100,7 +100,7 @@ class _NotePageState extends State<NotePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        title: const Center(child: Text('Notes')),
+        // title: const Center(child: Text('Notes')),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
@@ -108,33 +108,35 @@ class _NotePageState extends State<NotePage> {
       ),
       body: Column(
         children: [
-          Text('Notes'),
-          ListView.builder(
-              itemCount: currentNotes.length,
-              itemBuilder: (context, index) {
-                //get individual note
-                final note = currentNotes[index];
+          const Text('Notes'),
+          Expanded(
+            child: ListView.builder(
+                itemCount: currentNotes.length,
+                itemBuilder: (context, index) {
+                  //get individual note
+                  final note = currentNotes[index];
 
-                //return listTile UI
-                return ListTile(
-                  title: Text(note.text),
-                  trailing: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      //edit button
-                      IconButton(
-                        onPressed: () => updateNote(note),
-                        icon: const Icon(Icons.edit),
-                      ),
+                  //return listTile UI
+                  return ListTile(
+                    title: Text(note.text),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        //edit button
+                        IconButton(
+                          onPressed: () => updateNote(note),
+                          icon: const Icon(Icons.edit),
+                        ),
 
-                      //delete button
-                      IconButton(
-                          onPressed: () => deleteNote(note.id),
-                          icon: const Icon(Icons.delete))
-                    ],
-                  ),
-                );
-              }),
+                        //delete button
+                        IconButton(
+                            onPressed: () => deleteNote(note.id),
+                            icon: const Icon(Icons.delete))
+                      ],
+                    ),
+                  );
+                }),
+          ),
         ],
       ),
     );
