@@ -98,7 +98,8 @@ class _NotePageState extends State<NotePage> {
     List<Note> currentNotes = notedatabase.currentNotes;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        elevation: 0,
+        backgroundColor: Colors.transparent,
         title: const Center(child: Text('Notes')),
       ),
       floatingActionButton: FloatingActionButton(
