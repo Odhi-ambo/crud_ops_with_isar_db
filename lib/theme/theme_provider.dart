@@ -12,5 +12,8 @@ class ThemeProvider with ChangeNotifier {
   bool get isDarkMode => _themeData == darkMode;
 
   //setter method to set the new theme
-  set themeData(ThemeData themeData) {}
+  set themeData(ThemeData themeData) {
+    _themeData = themeData;
+    notifyListeners();
+  }
 }
