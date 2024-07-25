@@ -115,7 +115,9 @@ class _NotePageState extends State<NotePage> {
             padding: const EdgeInsets.only(left: .0),
             child: Text(
               'Notes',
-              style: GoogleFonts.dmSerifText(fontSize: 48),
+              style: GoogleFonts.dmSerifText(
+                  fontSize: 48,
+                  color: Theme.of(context).colorScheme.inversePrimary),
             ),
           ),
           Expanded(
