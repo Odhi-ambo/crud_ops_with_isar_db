@@ -100,7 +100,7 @@ class _NotePageState extends State<NotePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        // title: const Center(child: Text('Notes')),
+        //title: const Center(child: Text('Notes')),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
