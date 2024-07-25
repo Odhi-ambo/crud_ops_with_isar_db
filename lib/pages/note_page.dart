@@ -1,6 +1,7 @@
 import 'package:crud_isar_db/model/note.dart';
 import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class NotePage extends StatefulWidget {
@@ -110,11 +111,11 @@ class _NotePageState extends State<NotePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(left: .0),
+          Padding(
+            padding: const EdgeInsets.only(left: .0),
             child: Text(
               'Notes',
-              //style: GoogleFonts.deSerifText(),
+              style: GoogleFonts.deSerifText(),
             ),
           ),
           Expanded(
