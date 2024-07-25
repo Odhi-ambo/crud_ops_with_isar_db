@@ -109,11 +109,11 @@ class _NotePageState extends State<NotePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(25.0),
+          const Padding(
+            padding: EdgeInsets.only(left: .0),
             child: Text(
               'Notes',
-              style: GoogleFonts.deSerifText(),
+              //style: GoogleFonts.deSerifText(),
             ),
           ),
           Expanded(
