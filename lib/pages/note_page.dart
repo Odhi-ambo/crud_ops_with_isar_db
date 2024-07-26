@@ -101,6 +101,7 @@ class _NotePageState extends State<NotePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
+        foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         //title: const Center(child: Text('Notes')),
       ),
       backgroundColor: Theme.of(context).colorScheme.surface,
