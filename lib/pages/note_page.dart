@@ -1,3 +1,4 @@
+import 'package:crud_isar_db/components/drawer.dart';
 import 'package:crud_isar_db/model/note.dart';
 import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
@@ -109,7 +110,7 @@ class _NotePageState extends State<NotePage> {
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
-      drawer: const Drawer(),
+      drawer: const MyDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
