@@ -7,7 +7,9 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      child: const Column(children: [Icon(Icons.note)]),
+      child: const Column(children:
+          //header
+          [Icon(Icons.note)]),
     );
   }
 }
