@@ -7,7 +7,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.surface,
-      child: Column(
+      child: const Column(
         children: [
           //header
           DrawerHeader(
