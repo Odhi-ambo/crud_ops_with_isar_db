@@ -21,7 +21,9 @@ class MyDrawer extends StatelessWidget {
             onTap: () {},
           ),
           DrawerTile(
-              leading: Icon(Icons.settings), title: 'Settings', onTap: () {})
+              leading: const Icon(Icons.settings),
+              title: 'Settings',
+              onTap: () {})
 
           //notes settings
         ],
