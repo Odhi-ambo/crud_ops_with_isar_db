@@ -16,10 +16,12 @@ class MyDrawer extends StatelessWidget {
           ),
           //notes title
           DrawerTile(
-            leading: const Icon(Icons.note),
+            leading: const Icon(Icons.home),
             title: 'Notes',
             onTap: () {},
-          )
+          ),
+          DrawerTile(
+              leading: Icon(Icons.settings), title: 'Settings', onTap: () {})
 
           //notes settings
         ],
