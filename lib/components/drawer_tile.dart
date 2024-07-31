@@ -7,6 +7,8 @@ class DrawerTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile();
+    return ListTile(
+      title: Text(title),
+    );
   }
 }
