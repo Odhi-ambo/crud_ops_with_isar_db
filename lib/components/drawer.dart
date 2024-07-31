@@ -13,6 +13,9 @@ class MyDrawer extends StatelessWidget {
           DrawerHeader(
             child: Icon(Icons.note),
           ),
+          //notes title
+
+          //notes settings
         ],
       ),
     );
