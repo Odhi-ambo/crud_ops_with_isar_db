@@ -1,4 +1,5 @@
 import 'package:crud_isar_db/components/drawer_tile.dart';
+import 'package:crud_isar_db/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -28,6 +29,8 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pop(context);
 
                 //navigate to settings page
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SettingsPage()));
               })
 
           //notes settings
