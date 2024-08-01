@@ -12,6 +12,12 @@ class SettingsPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
+      body: Row(
+        children: [
+          //dark mode
+          Text('Dark Mode')
+        ],
+      ),
     );
   }
 }
