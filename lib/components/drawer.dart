@@ -23,7 +23,11 @@ class MyDrawer extends StatelessWidget {
           DrawerTile(
               leading: const Icon(Icons.settings),
               title: 'Settings',
-              onTap: () {})
+              onTap: () {
+                //pop
+
+                //navigate to settings page
+              })
 
           //notes settings
         ],
