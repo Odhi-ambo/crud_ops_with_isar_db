@@ -25,6 +25,7 @@ class MyDrawer extends StatelessWidget {
               title: 'Settings',
               onTap: () {
                 //pop
+                Navigator.pop(context);
 
                 //navigate to settings page
               })
