@@ -1,4 +1,7 @@
+import 'package:crud_isar_db/theme/theme_provider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -15,7 +18,14 @@ class SettingsPage extends StatelessWidget {
       body: Row(
         children: [
           //dark mode
-          Text('Dark Mode')
+          Text('Dark Mode'),
+
+          //toggle switch
+          CupertinoSwitch(
+            value:
+                Provider.of<ThemeProvider>(context, listen: false).isDarkMode,
+            onChanged: (value) {},
+          )
         ],
       ),
     );
