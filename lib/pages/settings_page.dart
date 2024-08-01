@@ -16,9 +16,15 @@ class SettingsPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           //dark mode
-          const Text('Dark Mode'),
+          Text(
+            'Dark Mode',
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).colorScheme.inversePrimary),
+          ),
 
           //toggle switch
           CupertinoSwitch(
