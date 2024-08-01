@@ -17,6 +17,7 @@ class SettingsPage extends StatelessWidget {
       ),
       body: Container(
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
           color: Theme.of(context).colorScheme.primary,
         ),
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 25.0),
