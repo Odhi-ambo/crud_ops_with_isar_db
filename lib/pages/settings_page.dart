@@ -20,12 +20,13 @@ class SettingsPage extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
         ),
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 25.0),
+        margin: EdgeInsets.only(left: 25, right: 25, top: 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             //dark mode
             Text(
-              'Dark Mode',
+              'Dark Mode/Light Mode',
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).colorScheme.inversePrimary),
