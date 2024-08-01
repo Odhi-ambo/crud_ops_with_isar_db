@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
           DrawerTile(
             leading: const Icon(Icons.home),
             title: 'Notes',
-            onTap: () {},
+            onTap: () => Navigator.pop(context),
           ),
           DrawerTile(
               leading: const Icon(Icons.settings),
