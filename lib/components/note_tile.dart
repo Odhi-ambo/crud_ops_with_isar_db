@@ -7,7 +7,12 @@ class NoteTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary),
+      decoration: BoxDecoration(
+          color: Theme.of(context).colorScheme.primary,
+          borderRadius: BorderRadius.circular(8)),
+      child: ListTile(
+        title: Text(text),
+      ),
     );
   }
 }
