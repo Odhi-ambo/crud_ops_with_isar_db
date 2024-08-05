@@ -132,7 +132,7 @@ class _NotePageState extends State<NotePage> {
                   final note = currentNotes[index];
 
                   //return listTile UI
-                  return NoteTile();
+                  return NoteTile(text:note.text);
                 }),
           ),
         ],
