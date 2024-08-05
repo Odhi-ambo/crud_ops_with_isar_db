@@ -10,7 +10,7 @@ class NoteTile extends StatelessWidget {
       decoration: BoxDecoration(
           color: Theme.of(context).colorScheme.primary,
           borderRadius: BorderRadius.circular(8)),
-      margin: EdgeInsets.only(bottom: 10, left: 24, right: 25),
+      margin: const EdgeInsets.only(bottom: 10, left: 24, right: 25),
       child: ListTile(
         title: Text(text),
       ),
