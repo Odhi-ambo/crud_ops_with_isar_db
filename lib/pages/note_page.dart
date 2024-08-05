@@ -1,4 +1,5 @@
 import 'package:crud_isar_db/components/drawer.dart';
+import 'package:crud_isar_db/components/note_tile.dart';
 import 'package:crud_isar_db/model/note.dart';
 import 'package:crud_isar_db/model/note_database.dart';
 import 'package:flutter/material.dart';
@@ -131,24 +132,7 @@ class _NotePageState extends State<NotePage> {
                   final note = currentNotes[index];
 
                   //return listTile UI
-                  return ListTile(
-                    title: Text(note.text),
-                    trailing: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        //edit button
-                        IconButton(
-                          onPressed: () => updateNote(note),
-                          icon: const Icon(Icons.edit),
-                        ),
-
-                        //delete button
-                        IconButton(
-                            onPressed: () => deleteNote(note.id),
-                            icon: const Icon(Icons.delete))
-                      ],
-                    ),
-                  );
+                  return NoteTile();
                 }),
           ),
         ],
