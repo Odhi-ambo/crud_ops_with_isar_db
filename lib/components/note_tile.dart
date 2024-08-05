@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NoteTile extends StatelessWidget {
-  const NoteTile({super.key});
+  final String text;
+  const NoteTile({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
