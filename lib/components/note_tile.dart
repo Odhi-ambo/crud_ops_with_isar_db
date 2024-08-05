@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 
 class NoteTile extends StatelessWidget {
   final void Function()? onDeletePressed;
+  final void Function()? onEditPressed;
   final String text;
   const NoteTile(
-      {super.key, required this.text, required this.onDeletePressed});
+      {super.key,
+      required this.text,
+      required this.onEditPressed,
+      required this.onDeletePressed});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +22,12 @@ class NoteTile extends StatelessWidget {
         trailing: Row(
           children: [
             IconButton(
+              onPressed: onEditPressed,
+              icon: const Icon(Icons.edit),
+            ),
+            IconButton(
               onPressed: onDeletePressed,
-              icon: Icon(Icons.delete),
+              icon: const Icon(Icons.delete),
             ),
           ],
         ),
