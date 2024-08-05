@@ -132,7 +132,11 @@ class _NotePageState extends State<NotePage> {
                   final note = currentNotes[index];
 
                   //return listTile UI
-                  return NoteTile(text:note.text);
+                  return NoteTile(
+                    text: note.text,
+                    onDeletePressed: () => deleteNote(note.id),
+                    onEditPressed: () => updateNote(note),
+                  );
                 }),
           ),
         ],
