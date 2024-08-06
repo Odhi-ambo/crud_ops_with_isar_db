@@ -20,6 +20,7 @@ class NoteTile extends StatelessWidget {
       child: ListTile(
         title: Text(text),
         trailing: Row(
+          mainAxisSize: MainAxisSize.min,
           children: [
             IconButton(
               onPressed: onEditPressed,
