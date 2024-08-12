@@ -18,21 +18,11 @@ class NoteTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(8)),
       margin: const EdgeInsets.only(bottom: 10, left: 24, right: 25),
       child: ListTile(
-        title: Text(text),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            IconButton(
-              onPressed: onEditPressed,
-              icon: const Icon(Icons.edit),
-            ),
-            IconButton(
-              onPressed: onDeletePressed,
-              icon: const Icon(Icons.delete),
-            ),
-          ],
-        ),
-      ),
+          title: Text(text),
+          trailing: IconButton(
+            icon: Icon(Icons.more_vert),
+            onPressed: () {},
+          )),
     );
   }
 }
