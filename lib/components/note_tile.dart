@@ -21,16 +21,17 @@ class NoteTile extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 10, left: 24, right: 25),
       child: ListTile(
           title: Text(text),
-          trailing: IconButton(
-            icon: const Icon(Icons.more_vert),
-            onPressed: () => showPopover(
-              width: 100,
-              height: 100,
-              context: context,
-              bodyBuilder: (context) => NoteSettings(),
+          trailing: Builder(
+            builder: (context) => IconButton(
+              icon: const Icon(Icons.more_vert),
+              onPressed: () => showPopover(
+                width: 100,
+                height: 100,
+                context: context,
+                bodyBuilder: (context) => NoteSettings(),
+              ),
             ),
-          ),
-          ),
+          )),
     );
   }
 }
