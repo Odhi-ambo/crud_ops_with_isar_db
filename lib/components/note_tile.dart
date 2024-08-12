@@ -24,6 +24,8 @@ class NoteTile extends StatelessWidget {
           trailing: IconButton(
             icon: const Icon(Icons.more_vert),
             onPressed: () => showPopover(
+              width: 100,
+              height: 100,
               context: context,
               bodyBuilder: (context) => NoteSettings(),
             ),
