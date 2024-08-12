@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
 
 class NoteSettings extends StatelessWidget {
-  const NoteSettings({super.key});
+  final void Function()? onEditTap;
+  const NoteSettings({super.key, required this.onEditTap});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         //edit option
+        GestureDetector(
+          onTap: onEditTap,
+          child: Container(
+            height: 50,
+            color: Theme.of(context).colorScheme.surface,
+            child: Text('Edit'),
+          ),
+        )
 
         //delete option
       ],
