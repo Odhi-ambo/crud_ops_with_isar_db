@@ -1,3 +1,4 @@
+import 'package:crud_isar_db/components/note_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:popover/popover.dart';
 
@@ -23,8 +24,11 @@ class NoteTile extends StatelessWidget {
           trailing: IconButton(
             icon: const Icon(Icons.more_vert),
             onPressed: () => showPopover(
-                context: context, bodyBuilder: (context) => notesettings(),),
-          )),
+              context: context,
+              bodyBuilder: (context) => NoteSettings(),
+            ),
+          ),
+          ),
     );
   }
 }
