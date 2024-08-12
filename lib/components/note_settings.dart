@@ -26,6 +26,7 @@ class NoteSettings extends StatelessWidget {
           child: Container(
             height: 50,
             color: Theme.of(context).colorScheme.surface,
+            child: Text('Delete'),
           ),
         )
       ],
