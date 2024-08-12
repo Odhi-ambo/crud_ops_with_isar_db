@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:popover/popover.dart';
 
 class NoteTile extends StatelessWidget {
   final void Function()? onDeletePressed;
@@ -21,7 +22,8 @@ class NoteTile extends StatelessWidget {
           title: Text(text),
           trailing: IconButton(
             icon: const Icon(Icons.more_vert),
-            onPressed: () {},
+            onPressed: () => showPopover(
+                context: context, bodyBuilder: (context) => notesettings(),),
           )),
     );
   }
