@@ -13,7 +13,10 @@ class MyDrawer extends StatelessWidget {
         children: [
           //header
           const DrawerHeader(
-            child: Icon(Icons.note),
+            child: Icon(Icons.edit),
+          ),
+          const SizedBox(
+            height: 25,
           ),
           //notes title
           DrawerTile(
@@ -29,8 +32,10 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pop(context);
 
                 //navigate to settings page
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const SettingsPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SettingsPage()));
               })
 
           //notes settings
