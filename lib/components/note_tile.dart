@@ -20,7 +20,7 @@ class NoteTile extends StatelessWidget {
       child: ListTile(
           title: Text(text),
           trailing: IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             onPressed: () {},
           )),
     );
