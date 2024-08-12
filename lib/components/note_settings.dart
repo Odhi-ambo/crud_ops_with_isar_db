@@ -32,7 +32,7 @@ class NoteSettings extends StatelessWidget {
         GestureDetector(
           onTap: (){
             Navigator.pop(context);
-            onDeleteTap;
+            onDeleteTap!();
           },
           child: Container(
             height: 50,
